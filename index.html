@@ -28,6 +28,63 @@
     ================================================== -->
     <link rel="shortcut icon" href="images/logoww.jpg" type="image/x-icon">
     <link rel="icon" href="images/logoww.jpg" type="image/x-icon">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 23%;
+  margin-bottom: 160px;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
 
 </head>
 
@@ -54,7 +111,7 @@
                     <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
                     <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
                     <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
-                    <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
+                    <li><a class="smoothscroll"  href="#team" title="team">Team</a></li>
                     <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
                 </ul>
     
@@ -314,84 +371,94 @@
     </section> <!-- end s-services -->
 
 
-    <!-- works
+    <!-- team
     ================================================== -->
-    <section id='works' class="s-works">
-                
-        <div class="row section-header" data-aos="fade-up">
+    <section id='team' class="s-works">
+       
+<div class="row section-header" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">The Box</h3>
-                <h1 class="display-1">Here are some renders of our product and we are so excited to show them to you.</h1>
+                <h3 class="subhead">Who are we</h3>
+                <h1 class="display-1">The Team</h1>
             </div>
-        </div> <!-- end section-header -->
+        </div>
 
-        <div class="row masonry-wrap">
-            <div class="masonry">
+<!-- Page Content -->
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/avatars/sanchit.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Sanchit Jhunjhunwala</h2>
+        <p class="title">Mechanical Engineer</p>
+        <p></p>
+        <p><button onclick="window.location.href = 'mailto:sanchit@mitochondrial.in'" class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
 
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
+  <div class="column">
+    <div class="card">
+      <img src="images/avatars/prateek.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Prateek <br> Manocha</h2>
+        <p class="title">Electrical Engineer</p>
+        <p></p>
+        <p><button onclick="window.location.href = 'mailto:prateek@mitochondrial.in'" class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
 
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/g-lamp.jpg" class="thumb-link" title="Lamp" data-size="1050x700">
-                                <img src="images/portfolio/box.png" 
-                                     srcset="images/portfolio/box.png 1x, images/portfolio/box@2x.png 2x" alt="">
-                            </a>
-                        </div>
+  <div class="column">
+    <div class="card">
+      <img src="images/avatars/vrishank.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Vrishank Bharadwaj</h2>
+        <p class="title">Mechanical Engineer</p>
+        <p></p>
+        <p><button onclick="window.location.href = 'mailto:vrishank@mitochondrial.in'" class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
 
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Lamp
-                            </h3>
-                            <p class="item-folio__cat">
-                                Web Design
-                            </p>
-                        </div>
+  <div class="column">
+    <div class="card">
+      <img src="images/avatars/umang.jpg" style="width:100%">
+      <div class="container">
+        <h2>Umang Mathur</h2>
+        <p class="title">Biotech Engineer</p>
+        <p></p>
+        <p><button onclick="window.location.href = 'mailto:umang@mitochondrial.in'" class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
 
-                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                            Project Link
-                        </a>
+  <div class="column">
+    <div class="card">
+      <img src="images/avatars/vrishank.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Shwetank Panwar</h2>
+        <p class="title">Biotech Engineer</p>
+        <p></p>
+        <p><button onclick="window.location.href = 'mailto:shwetank@mitochondrial.in'" class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
 
-                        <div class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                        </div>
+  <div class="column">
+    <div class="card">
+      <img src="images/avatars/vrishank.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Vicky<br> S</h2>
+        <p class="title">Designer</p>
+        <p></p>
+        <p><button onclick="window.location.href = 'mailto:vicky@mitochondrial.in'" class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
 
-                    </div> <!-- end item-folio -->
-                </div> <!-- end masonry__brick -->
-
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/g-salad.jpg" class="thumb-link" title="Salad" data-size="1050x700">
-                                <img src="images/portfolio/patient.png" 
-                                     srcset="images/portfolio/patient.png 1x, images/portfolio/patient@2x.png 2x" alt="">
-                            </a>
-                        </div>
-
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Salad
-                            </h3>
-                            <p class="item-folio__cat">
-                                Branding
-                            </p>
-                        </div>
-
-                        <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                            Project Link
-                        </a>
-
-                        <span class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                        </span>
-
-                    </div> <!-- end item-folio -->
-                </div> <!-- end masonry__brick -->
-
-            </div> <!-- end masonry -->
-        </div> <!-- end masonry-wrap -->
-
-    </section> <!-- end s-works -->
+</div>    </section> <!-- end s-works -->
 
 
     <!-- contact

@@ -20,12 +20,13 @@ $('#form_id').ajaxchimp(options);
 
 Options:
 =======
+*/
 options = {
     language: 'en',
     callback: callbackFunction,
-    url: 'http://blahblah.us1.list-manage.com/subscribe/post?u=5afsdhfuhdsiufdba6f8802&id=4djhfdsh99f'
+    url: 'http://blahblah.us1.list-manage.com/subscribe/post?u=3a3ba2fe3eeaad6706bf9620fd99e35c-us19'
 }
-
+/*!
 Notes:
 =====
 To get the mailchimp JSONP url (undocumented), change 'post?' to 'post-json?' and add '&c=?' to the end.

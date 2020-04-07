@@ -12,8 +12,9 @@ Author: Siddharth Doshi
 
 Use:
 ===
-$('#form_id').ajaxchimp(options);
-
+*/
+$('mc-form').ajaxchimp(options);
+/*!
 - Form should have one <input> element with attribute 'type=email'
 - Form should have one label element with attribute 'for=email_input_id' (used to display error/success message)
 - All options are optional.
